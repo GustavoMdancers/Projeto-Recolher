@@ -122,3 +122,30 @@ header {
     }
   }
 }
+
+footer {
+  background-color: $text-brown;
+  height: 15rem;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    .logo {
+      width: 10rem;
+      height: 10rem;
+    }
+    .texto {
+      width: 100rem;
+      text-align: left;
+      color: white;
+      align-items: center;
+      font-family: "Inter";
+      font-size: 1.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
