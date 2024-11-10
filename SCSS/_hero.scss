@@ -122,6 +122,17 @@ header {
   }
 }
 
+.centroReciclagem {
+  height: 76.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .mapa {
+    height: 50rem;
+    width: 100rem;
+  }
+}
+
 footer {
   background-color: $text-brown;
   height: 15rem;
