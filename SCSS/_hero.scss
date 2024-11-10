@@ -54,7 +54,6 @@ header {
 }
 
 .hero {
-  padding-top: 10rem;
   height: 76.8rem;
   align-items: center;
   display: flex;
@@ -120,6 +119,17 @@ header {
         color: $text-black;
       }
     }
+  }
+}
+
+.centroReciclagem {
+  height: 76.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .mapa {
+    height: 50rem;
+    width: 100rem;
   }
 }
 
