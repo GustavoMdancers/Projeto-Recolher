@@ -1,0 +1,19 @@
+.btn-primary {
+  display: inline-block;
+  height: 4.3rem;
+  cursor: pointer;
+  line-height: 4.8rem;
+  background-color: #0000;
+  border-radius: 2rem;
+  padding: 0 2.7rem;
+  transition: all 0.3s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $text-brown;
+  font-family: "league spartan";
+  font-weight: 500;
+  &:hover {
+    background-color: $text-brown;
+    color: white;
+  }
+}
