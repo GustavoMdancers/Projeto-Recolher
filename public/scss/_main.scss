@@ -1,0 +1,206 @@
+body {
+  background-color: $background;
+}
+
+header {
+  position: fixed;
+  height: 10rem;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  transition: all 0.3s;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 20rem;
+      height: 10rem;
+      position: relative;
+      .logo_header {
+        position: absolute;
+      }
+      .logo_header_w {
+        position: absolute;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  &.scrolled {
+    background-color: $text-brown;
+    .container {
+      .logo {
+        .logo_header {
+          visibility: hidden;
+        }
+      }
+      ul {
+        li {
+          .btn-primary {
+            border-color: white;
+            color: white;
+            &:hover {
+              background-color: white;
+              color: $text-brown;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  height: 76.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    .left {
+      height: 50rem;
+      width: 50rem;
+    }
+    .right {
+      height: 20rem;
+      width: 63rem;
+      h1 {
+        font-family: "League Spartan";
+        font-size: 13rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color: $text-black;
+      }
+      h2 {
+        font-family: "League Spartan";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $text-black;
+      }
+    }
+  }
+}
+
+.sobre {
+  height: 76.8rem;
+  background-color: white;
+  align-items: center;
+  padding-top: 10rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      width: 60rem;
+      h2 {
+        font-family: "League Spartan";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color: $text-black;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: "Inter";
+        font-size: 1.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $text-black;
+      }
+    }
+  }
+}
+
+.centroReciclagem {
+  height: 76.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .text {
+      width: 65rem;
+      h2 {
+        font-family: "League Spartan";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color: $text-black;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: "Inter";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $text-black;
+        margin-bottom: 2rem;
+      }
+      ul {
+        li {
+          font-family: "Inter";
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          color: $text-black;
+          margin-bottom: 1rem;
+          strong {
+            font-family: "Inter";
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: $text-black;
+          }
+        }
+      }
+    }
+    .mapa {
+      height: 50rem;
+      width: 50rem;
+    }
+  }
+}
+
+footer {
+  background-color: $text-brown;
+  height: 15rem;
+  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    .logo {
+      width: 10rem;
+      height: 10rem;
+    }
+    .texto {
+      width: 100rem;
+      text-align: left;
+      color: white;
+      align-items: center;
+      font-family: "Inter";
+      font-size: 1.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
