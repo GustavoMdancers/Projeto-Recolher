@@ -64,6 +64,44 @@
         </div>
       </div>
     </section>
+    <div class="blog">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>Slide 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestias hic quia ullam, cupiditate dolores, porro sequi
+                consequatur illo molestiae iste autem, ipsam ut quisquam veniam!
+                Molestias expedita itaque voluptatum fugit.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h3>Slide 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                exercitationem totam, dolore eius accusamus alias sed incidunt
+                quo voluptate quod voluptatem vitae cum illo aliquid magni esse
+                veritatis ea! Ut?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h3>Slide 3</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                hic expedita autem. Autem fugiat quisquam architecto accusantium
+                officia. Temporibus, architecto cum odit facilis unde at vel
+                quae sequi ad aliquid.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
     <section class="centroReciclagem">
       <div class="container">
         <div class="text">
@@ -135,5 +173,26 @@
         </div>
       </div>
     </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
