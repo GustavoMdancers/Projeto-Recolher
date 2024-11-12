@@ -30,18 +30,21 @@
         </div>
         <ul>
           <li>
-            <button class="btn-primary smoothScroll" id="sobre">SOBRE</button>
+            <button class="btn-primary" id="sobre">SOBRE</button>
           </li>
           <li>
-            <button class="btn-primary smoothScroll" id="acoes">AÇÕES</button>
+            <button class="btn-primary" id="acoes">AÇÕES</button>
           </li>
           <li>
-            <button class="btn-primary smoothScroll" id="centroreciclagem">
+            <button class="btn-primary" id="voluntario">VOLUNTARIADO</button>
+          </li>
+          <li>
+            <button class="btn-primary" id="centroreciclagem">
               CENTROS DE RECICLAGEM
             </button>
           </li>
           <li>
-            <button class="btn-primary smoothScroll" id="denuncia">
+            <button class="btn-primary" id="denuncia">
               DESCARTE IRREGULAR
             </button>
           </li>
@@ -78,7 +81,7 @@
     </section>
     <div class="blog" id="sBlog">
       <div class="container">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <h3>Slide 1</h3>
@@ -114,6 +117,48 @@
         </div>
       </div>
     </div>
+    <section class="voluntariado" id="sVoluntario">
+      <div class="container">
+        <div class="slide">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide slide1"
+                onclick="redirectToURL('https://www.buritisjuntos.com.br/dicas-e-noticias/buritis/variedades/castracao-de-animais-em-bh')"
+              >
+                <h3>Projeto Castração Ecológica</h3>
+              </div>
+              <div
+                class="swiper-slide slide2"
+                onclick="redirectToURL('https://www.reciclaorla.com.br/')"
+              >
+                <h3>Recicla Orla</h3>
+              </div>
+              <div
+                class="swiper-slide slide3"
+                onclick="redirectToURL('https://voluntarios.braskem.com/br/WeCareWeek')"
+              >
+                <h3>WECARE</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <h2>Voluntariado</h2>
+          <p>
+            Quer ajudar a fazer do mundo um lugar mais limpo? Participe dos
+            diversos programas de voluntariado disponíveis pelo Brasil, no
+            carrossel ao lado temos alguns exemplos de iniciativas que tem a
+            reciclagem como foco principal.
+          </p>
+          <p>
+            Tem um programa de voluntariado que você conhece que não está aqui
+            no site? Conta pra gente!
+          </p>
+          <button class="btn-primary">SUGERIR PROGRAMA</button>
+        </div>
+      </div>
+    </section>
     <section class="centroReciclagem" id="sCentro">
       <div class="container">
         <div class="text">
@@ -217,7 +262,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper1", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -231,11 +276,14 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      var swiper2 = new Swiper(".mySwiper2", {
+        effect: "cards",
+        grabCursor: true,
+      });
     </script>
     <script
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
     ></script>
-    <script type="text/javascript" src="./js/smoothscroll.js"></script>
   </body>
 </html>

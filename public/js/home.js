@@ -26,6 +26,11 @@ document.getElementById("acoes").addEventListener('click', function () {
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
+document.getElementById("voluntario").addEventListener('click', function () {
+    const targetSection = document.getElementById("sVoluntario")
+    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+})
+
 document.getElementById("centroreciclagem").addEventListener('click', function () {
     const targetSection = document.getElementById("sCentro")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
