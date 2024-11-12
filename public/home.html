@@ -15,13 +15,12 @@
       href="./img/base_logo_final_reduzido.svg"
       type="image/x-icon"
     />
-    <script src="./js/home.js"></script>
     <title>Projeto Reciclar: Home</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="logo">
+        <div class="logo" id="start">
           <img src="./img/base_logo_final2.svg" class="logo_header" alt="" />
           <img
             src="./img/base_logo_final2_white.svg"
@@ -30,13 +29,26 @@
           />
         </div>
         <ul>
-          <li><button class="btn-primary">SOBRE</button></li>
-          <li><button class="btn-primary">AÇÕES</button></li>
-          <li><button class="btn-primary">JELLYFISH</button></li>
+          <li>
+            <button class="btn-primary smoothScroll" id="sobre">SOBRE</button>
+          </li>
+          <li>
+            <button class="btn-primary smoothScroll" id="acoes">AÇÕES</button>
+          </li>
+          <li>
+            <button class="btn-primary smoothScroll" id="centroreciclagem">
+              CENTROS DE RECICLAGEM
+            </button>
+          </li>
+          <li>
+            <button class="btn-primary smoothScroll" id="denuncia">
+              DESCARTE IRREGULAR
+            </button>
+          </li>
         </ul>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="sHero">
       <div class="container">
         <div class="left"><img src="./img/Hero_img.svg" alt="" /></div>
         <div class="right">
@@ -45,7 +57,7 @@
         </div>
       </div>
     </section>
-    <section class="sobre">
+    <section class="sobre" id="sSobre">
       <div class="container">
         <div class="text">
           <h2>Reciclar é cuidar do nosso lar comum</h2>
@@ -64,7 +76,7 @@
         </div>
       </div>
     </section>
-    <div class="blog">
+    <div class="blog" id="sBlog">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -102,7 +114,7 @@
         </div>
       </div>
     </div>
-    <section class="centroReciclagem">
+    <section class="centroReciclagem" id="sCentro">
       <div class="container">
         <div class="text">
           <h2>Centros de reciclagem</h2>
@@ -156,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="denuncia_descarte">
+    <section class="denuncia_descarte" id="sDescarte">
       <div class="container">
         <div class="mapa_denuncia">
           <iframe
@@ -198,6 +210,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/home.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -219,5 +232,10 @@
         },
       });
     </script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/smoothscroll.js"></script>
   </body>
 </html>
