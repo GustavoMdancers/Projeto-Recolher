@@ -83,13 +83,15 @@
       <div class="container">
         <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <h3>Slide 1</h3>
+            <div
+              class="swiper-slide slide1"
+              onclick="redirectToURL('https://voitto.com.br/blog/artigo/robo-que-limpa-cursos-hidricos')"
+            >
+              <h3>Jellyfish</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Molestias hic quia ullam, cupiditate dolores, porro sequi
-                consequatur illo molestiae iste autem, ipsam ut quisquam veniam!
-                Molestias expedita itaque voluptatum fugit.
+                O que esse "Roomba aquático" faz? Por que várias instituições
+                estão usando ele para limpar lagos, rios e até oceanos? Clique
+                no card e descubra!
               </p>
             </div>
             <div class="swiper-slide">
@@ -284,6 +286,10 @@
       var swiper2 = new Swiper(".mySwiper2", {
         effect: "cards",
         grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       });
     </script>
   </body>

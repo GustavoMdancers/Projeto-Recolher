@@ -142,15 +142,16 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        cursor: pointer;
         h3 {
           font-family: "League Spartan";
-          font-size: 6rem;
+          font-size: 16rem;
           font-style: normal;
           font-weight: 900;
           line-height: normal;
-          color: $text-black;
+          color: white;
           margin-bottom: 2rem;
-          margin-left: 1rem;
+          margin-left: 4rem;
         }
         p {
           font-family: "Inter";
@@ -158,9 +159,30 @@ header {
           font-style: normal;
           font-weight: 400;
           line-height: normal;
-          color: $text-black;
+          color: white;
           margin-bottom: 5rem;
-          margin-left: 1rem;
+          margin-left: 4rem;
+          width: 50rem;
+        }
+        &.slide1 {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(
+                to top,
+                rgba(19, 98, 63, 0.8) 0%,
+                rgba(19, 98, 63, 0) 100%
+              ),
+              url("../img/Jellyfish/2023-JellyfihsbotbyIADYS-4.png");
+            background-size: cover;
+            background-position: center;
+          }
         }
       }
       &-pagination-progressbar {
@@ -172,7 +194,7 @@ header {
       &-button {
         &-prev,
         &-next {
-          color: $text-brown;
+          color: white;
         }
       }
     }
