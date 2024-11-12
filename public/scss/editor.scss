@@ -1,0 +1,61 @@
+@import "mixins";
+@import "reset";
+@import "responsive";
+@import "variables";
+@import "buttons";
+
+body {
+  background-color: $background;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  height: 10rem;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  transition: all 0.3s;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 20rem;
+      height: 10rem;
+      position: relative;
+      .logo_header {
+        position: absolute;
+      }
+      .logo_header_w {
+        position: absolute;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  &.scrolled {
+    background-color: $text-brown;
+    .container {
+      .logo {
+        .logo_header {
+          visibility: hidden;
+        }
+      }
+      ul {
+        li {
+          .btn-primary {
+            border-color: white;
+            color: white;
+            &:hover {
+              background-color: white;
+              color: $text-brown;
+            }
+          }
+        }
+      }
+    }
+  }
+}

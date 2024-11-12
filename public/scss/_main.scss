@@ -135,6 +135,7 @@ header {
       width: 100%;
       height: 100%;
       background-color: white;
+      border-radius: 5rem;
       &-slide {
         text-align: left;
         display: flex;
@@ -157,7 +158,7 @@ header {
           font-weight: 400;
           line-height: normal;
           color: $text-black;
-          margin-bottom: 1rem;
+          margin-bottom: 5rem;
           margin-left: 1rem;
         }
       }
@@ -230,6 +231,39 @@ header {
     .mapa {
       height: 50rem;
       width: 50rem;
+    }
+  }
+}
+
+.denuncia_descarte {
+  height: 76.8rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text {
+      width: 50rem;
+      h2 {
+        font-family: "League Spartan";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color: $text-black;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: "Inter";
+        font-size: 1.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $text-black;
+        margin-bottom: 2rem;
+      }
     }
   }
 }

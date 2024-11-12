@@ -6,3 +6,7 @@ document.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+function redirectToURL(url) {
+    window.open(url, '_blank');
+}
