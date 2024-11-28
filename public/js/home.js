@@ -40,3 +40,12 @@ document.getElementById("denuncia").addEventListener('click', function () {
     const targetSection = document.getElementById("sDescarte")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
+
+const btnMenu = document.getElementById('btn-mobile');
+const overlayMenu = document.querySelector('.js-overlay');
+
+function openMenuMobile() {
+    document.documentElement.classList.toggle('menu-opened');
+}
+btnMenu.addEventListener('click', openMenuMobile);
+overlayMenu.addEventListener('click', openMenuMobile);
