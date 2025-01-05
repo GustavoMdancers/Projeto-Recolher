@@ -279,6 +279,38 @@ header {
       }
     }
   }
+  @include responsive(1316px) {
+    .container {
+      .img {
+        img {
+          height: 50rem;
+        }
+      }
+    }
+  }
+  @include responsive(639px) {
+    height: 100rem;
+    .container {
+      display: flex;
+      flex-direction: column;
+      .text {
+        width: 100%;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+      }
+      .img {
+        img {
+          height: 42rem;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .blog {
