@@ -283,6 +283,15 @@ header {
     .container {
       .img {
         img {
+          height: 60rem;
+        }
+      }
+    }
+  }
+  @include responsive(1004px) {
+    .container {
+      .img {
+        img {
           height: 50rem;
         }
       }
@@ -311,6 +320,15 @@ header {
       }
     }
   }
+  @include responsive(500px) {
+    .container {
+      .text {
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
 }
 
 .blog {
@@ -331,7 +349,6 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        cursor: pointer;
         h3 {
           font-family: "League Spartan";
           font-size: 16rem;
@@ -349,9 +366,20 @@ header {
           font-weight: 400;
           line-height: normal;
           color: white;
-          margin-bottom: 5rem;
+          margin-bottom: 2rem;
           margin-left: 4rem;
           width: 50rem;
+        }
+        button {
+          margin-bottom: 2rem;
+          margin-left: 4rem;
+          width: fit-content;
+          border-color: white;
+          color: white;
+          &:hover {
+            background-color: white;
+            color: $text-brown;
+          }
         }
         &.slide1 {
           position: relative;
@@ -384,6 +412,42 @@ header {
         &-prev,
         &-next {
           color: white;
+        }
+      }
+    }
+  }
+  @include responsive(777px) {
+    .container {
+      .swiper {
+        &-slide {
+          h3 {
+            font-size: 10rem;
+          }
+          p {
+            width: auto;
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(500px) {
+    .container {
+      .swiper {
+        &-slide {
+          align-items: center;
+          h3 {
+            text-align: center;
+            margin: 0 auto;
+          }
+          p {
+            width: auto;
+            margin-right: 4rem;
+            text-align: center;
+          }
+          button {
+            margin: 0 auto 2rem;
+          }
         }
       }
     }
