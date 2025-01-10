@@ -579,6 +579,75 @@ header {
       }
     }
   }
+  @include responsive(1030px) {
+    .container {
+      .slide {
+        width: 30rem;
+        margin-left: 7rem;
+        height: 40rem;
+        .swiper {
+          width: 28rem;
+          height: 40rem;
+          &-slide {
+            h3 {
+              font-size: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(1000px) {
+    .container {
+      .text {
+        width: 50rem;
+      }
+    }
+  }
+  @include responsive(925px) {
+    .container {
+      .text {
+        width: 40rem;
+      }
+    }
+  }
+  @include responsive(838px) {
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .text {
+        order: 1;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        button {
+          align-self: center;
+        }
+      }
+      .slide {
+        order: 2;
+        margin: 0;
+      }
+    }
+  }
+  @include responsive(500px) {
+    height: 85rem;
+  }
 }
 
 .centroReciclagem {
