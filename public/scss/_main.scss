@@ -704,6 +704,62 @@ header {
       width: 50rem;
     }
   }
+  @include responsive(1316px) {
+  }
+  @include responsive(1030px) {
+    .container {
+      .mapa {
+        width: 40rem;
+        margin-left: 5rem;
+      }
+    }
+  }
+  @include responsive(777px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .text {
+        width: 90%;
+        text-align: center;
+      }
+      .mapa {
+        height: 20rem;
+        margin: 0 auto;
+      }
+    }
+  }
+  @include responsive(700px) {
+    height: 80rem;
+    .container {
+      .text {
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+        ul {
+          li {
+            font-size: 1.4rem;
+            strong {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(500px) {
+    height: 95rem;
+    .container {
+      margin: 0 auto;
+      .mapa {
+        width: 90%;
+      }
+    }
+  }
 }
 
 .denuncia_descarte {
