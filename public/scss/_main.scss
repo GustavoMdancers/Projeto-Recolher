@@ -129,6 +129,23 @@ header {
       }
     }
   }
+  @include responsive(500px) {
+    .overlay {
+      aside {
+        .logo {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      ul {
+        li {
+          button {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .menu-opened {
@@ -229,19 +246,26 @@ header {
     }
   }
   @include responsive(500px) {
+    height: fit-content;
+    padding: 3rem 0 3rem 0;
     .container {
+      padding: 9.5rem 0 4rem 0;
       .left {
-        margin-top: 3rem;
+        height: fit-content;
+        margin-top: 2rem;
+        width: 95%;
         img {
           height: 38rem;
         }
       }
       .right {
+        width: 90%;
+        height: auto;
         h1 {
-          font-size: 8rem;
+          font-size: 6rem;
         }
         h2 {
-          font-size: 5rem;
+          font-size: 3rem;
         }
       }
     }
@@ -321,10 +345,24 @@ header {
     }
   }
   @include responsive(500px) {
+    height: fit-content;
+    padding: 4rem 0 4rem 0;
     .container {
       .text {
+        width: 95%;
         h2 {
           font-size: 4rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      .img {
+        width: 95%;
+        height: fit-content;
+        img {
+          width: 100%;
+          height: calc(width - 50%);
         }
       }
     }
@@ -432,18 +470,23 @@ header {
     }
   }
   @include responsive(500px) {
+    height: fit-content;
+    padding: 4rem 0 4rem 0;
     .container {
       .swiper {
+        width: 95%;
         &-slide {
           align-items: center;
           h3 {
             text-align: center;
             margin: 0 auto;
+            font-size: 18vw;
           }
           p {
             width: auto;
             margin-right: 4rem;
             text-align: center;
+            font-size: 4vw;
           }
           button {
             margin: 0 auto 2rem;
@@ -646,7 +689,20 @@ header {
     }
   }
   @include responsive(500px) {
-    height: 85rem;
+    height: fit-content;
+    padding: 4rem 0 4rem 0;
+    .container {
+      height: fit-content;
+      .text {
+        width: 95%;
+        h2 {
+          font-size: 15vw;
+        }
+        p {
+          font-size: 5vw;
+        }
+      }
+    }
   }
 }
 
@@ -772,6 +828,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .mapa_denuncia {
+      width: 50rem;
+      height: 50rem;
+    }
     .text {
       width: 50rem;
       h2 {
@@ -791,6 +851,48 @@ header {
         line-height: normal;
         color: $text-black;
         margin-bottom: 2rem;
+      }
+    }
+  }
+  @include responsive(1030px) {
+    height: fit-content;
+    padding: 4rem 0 4rem 0;
+    .container {
+      .text {
+        margin-left: 4rem;
+      }
+    }
+  }
+  @include responsive(604px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .mapa_denuncia {
+        order: 2;
+        width: 90%;
+        height: 40rem;
+      }
+      .text {
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        h2 {
+          text-align: center;
+          font-size: 4rem;
+        }
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+        button {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
