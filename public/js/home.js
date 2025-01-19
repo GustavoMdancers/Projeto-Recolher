@@ -11,35 +11,48 @@ function redirectToURL(url) {
     window.open(url, '_blank');
 }
 
-document.querySelectorAll("#start, #m_start").addEventListener('click', function () {
-    const targetSection = document.getElementById("sHero")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#start, #m_start").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sHero')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
 
-document.querySelectorAll("#m_sobre ,#sobre").addEventListener('click', function () {
-    const targetSection = document.getElementById("sSobre")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#m_sobre ,#sobre").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sSobre')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
 
-document.querySelectorAll("#m_acoes ,#acoes").addEventListener('click', function () {
-    const targetSection = document.getElementById("sBlog")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#m_acoes ,#acoes").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sBlog')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
 
-document.querySelectorAll("#m_voluntario ,#voluntario").addEventListener('click', function () {
-    const targetSection = document.getElementById("sVoluntario")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#m_voluntario ,#voluntario").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sVoluntario')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
 
-document.querySelectorAll("#m_centroreciclagem ,#centroreciclagem").addEventListener('click', function () {
-    const targetSection = document.getElementById("sCentro")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#m_centroreciclagem ,#centroreciclagem").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sCentro')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
 
-document.querySelectorAll("#m_denuncia ,#denuncia").addEventListener('click', function () {
-    const targetSection = document.getElementById("sDescarte")
-    targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+document.querySelectorAll("#m_denuncia ,#denuncia").forEach(element => {
+    element.addEventListener('click', function () {
+        const targetSection = document.getElementById('sDescarte')
+        targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+    })
 })
+
 
 const btnMenu = document.getElementById('btn-mobile');
 const overlayMenu = document.querySelector('.js-overlay');

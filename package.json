@@ -11,6 +11,7 @@
   "dependencies": {
     "express-fileupload": "^1.5.1",
     "express.js": "^1.0.0",
+    "lazysizes": "^5.3.2",
     "nodemon": "^3.1.7"
   }
 }
