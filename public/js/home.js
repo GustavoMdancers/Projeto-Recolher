@@ -11,32 +11,32 @@ function redirectToURL(url) {
     window.open(url, '_blank');
 }
 
-document.getElementById("start").addEventListener('click', function () {
+document.querySelectorAll("#start, #m_start").addEventListener('click', function () {
     const targetSection = document.getElementById("sHero")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
-document.getElementById("sobre").addEventListener('click', function () {
+document.querySelectorAll("#m_sobre ,#sobre").addEventListener('click', function () {
     const targetSection = document.getElementById("sSobre")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
-document.getElementById("acoes").addEventListener('click', function () {
+document.querySelectorAll("#m_acoes ,#acoes").addEventListener('click', function () {
     const targetSection = document.getElementById("sBlog")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
-document.getElementById("voluntario").addEventListener('click', function () {
+document.querySelectorAll("#m_voluntario ,#voluntario").addEventListener('click', function () {
     const targetSection = document.getElementById("sVoluntario")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
-document.getElementById("centroreciclagem").addEventListener('click', function () {
+document.querySelectorAll("#m_centroreciclagem ,#centroreciclagem").addEventListener('click', function () {
     const targetSection = document.getElementById("sCentro")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
 
-document.getElementById("denuncia").addEventListener('click', function () {
+document.querySelectorAll("#m_denuncia ,#denuncia").addEventListener('click', function () {
     const targetSection = document.getElementById("sDescarte")
     targetSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
 })
